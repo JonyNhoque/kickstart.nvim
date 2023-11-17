@@ -95,6 +95,7 @@ require('lazy').setup({
     },
   },
 
+
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -152,7 +153,7 @@ require('lazy').setup({
     },
   },
 
-  {
+--[[  {
     -- Theme inspired by Atom
     'navarasu/onedark.nvim',
     priority = 1000,
@@ -160,7 +161,7 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
-
+--]]
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
@@ -517,7 +518,7 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-
+  angularls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
